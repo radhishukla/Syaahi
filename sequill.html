@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sequill - Where Ideas turn into Identity</h1>
+        <p>Publish your book and share it with the world</p>
+    </header>
+
+    <section class="form-section">
+        <form id="bookForm">
+            <h2>Publish Your Book</h2>
+            
+            <label for="title">Book Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter the book title" required>
+            
+            <label for="author">Author Name</label>
+            <input type="text" id="author" name="author" placeholder="Enter your name" required>
+
+            <label for="genres">Select Genre</label>
+            <select id="genres" name="genres" multiple required>
+                <option value="fiction">Fiction</option>
+                <option value="nonfiction">Non-fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Thriller</option>
+                <option value="scienceFiction">Science Fiction</option>
+                <option value="historical">Historical</option>
+                <option value="mystery">Mystery</option>
+                <option value="selfhelp">Self-help</option>
+                <!-- Add more genres as needed -->
+            </select>
+
+            <label for="tags">Tags (comma separated)</label>
+            <input type="text" id="tags" name="tags" placeholder="e.g., Adventure, Mystery, Space" required>
+
+            <label for="description">Book Description</label>
+            <textarea id="description" name="description" placeholder="Write a brief description" required></textarea>
+
+            <label for="file">Upload Book File (PDF)</label>
+            <input type="file" id="file" name="file" accept=".pdf" required>
+
+            <button type="submit">Publish Book</button>
+        </form>
+    </section>
+
+    <section id="bookDisplay" class="book-display">
+        <h2>Your Published Book</h2>
+        <div class="book-info">
+            <h3 id="bookTitle"></h3>
+            <p><strong>Author: </strong><span id="bookAuthor"></span></p>
+            <p id="bookDesc"></p>
+            <p><strong>Genres: </strong><span id="bookGenres"></span></p>
+            <p><strong>Tags: </strong><span id="bookTags"></span></p>
+            <p><strong>File Uploaded: </strong><span id="bookFile"></span></p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

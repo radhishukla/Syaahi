@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('b&r.jpg') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover; /* Cover the whole viewport */
+    color: #fffaf1; /* Text color is white for contrast */
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: red;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+textarea,
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Adjust multi-select (Genres) box styling */
+select[multiple] {
+    height: 100px; /* Adjust height to your preference */
+    overflow-y: auto; /* Enables scrolling for long lists */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(158, 3, 3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(128, 0, 0);
+}
+
+.book-display {
+    display: none;
+    margin-top: 30px;
+}
+
+.book-display h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.book-info {
+    background-color: #dba849;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+}
+
+
